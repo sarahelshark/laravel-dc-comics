@@ -12,7 +12,9 @@ class PostController extends Controller
      */
     public function index()
     {
-        dd(Post::all());
+        //dd(Post::all()); 
+        //mi creo view corrispondente dove stampo tutti i post
+        return view('admin.posts.index',['posts'=>Post::all()]);
     }
 
     /**
@@ -37,6 +39,8 @@ class PostController extends Controller
     public function show(Post $post)
     {
         dd($post);
+        //stampo view ma per il singolo post
+        return view();
     }
 
     /**
