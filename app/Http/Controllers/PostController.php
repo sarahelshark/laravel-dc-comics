@@ -20,7 +20,7 @@ class PostController extends Controller
      */
     public function create()
     {
-        //
+        dd(Post::all());
     }
 
     /**
@@ -36,7 +36,7 @@ class PostController extends Controller
      */
     public function show(Post $post)
     {
-        //
+        dd($post);
     }
 
     /**
