@@ -1,6 +1,8 @@
 <?php
 
+use App\Http\Controllers\PostController;
 use Illuminate\Support\Facades\Route;
+use PHPUnit\Framework\Attributes\PostCondition;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,3 +18,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::resource('post', PostController::class);
+//per la nostra identita post vogliamo creare 7 rotte differenti
