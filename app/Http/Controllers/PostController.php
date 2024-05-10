@@ -38,9 +38,10 @@ class PostController extends Controller
      */
     public function show(Post $post)
     {
-        dd($post);
+        //dd($post);
         //stampo view ma per il singolo post
-        return view();
+   
+        return view('admin.posts.show', compact('post'));
     }
 
     /**
