@@ -20,5 +20,5 @@ Route::get('/', function () {
 });
 
 //controller di tipo risorsa ____ le operazioni crud sono per gli ADMIN della pagina, non per i semplici visitatori
-Route::resource('post', PostController::class);
+Route::resource('posts', PostController::class);
 //per la nostra identita post vogliamo creare 7 rotte differenti

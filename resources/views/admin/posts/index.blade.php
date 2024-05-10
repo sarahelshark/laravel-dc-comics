@@ -6,16 +6,18 @@
     <title>Document</title>
 </head>
 <body >
-    <h1>Hello Admin</h1>
+   
 
-    @dd($posts);
-    <!---->
-    <div>
-        @foreach ($posts as $post)
+    <h1>Hello Admin</h1><a href="#">view post</a>
+   
+    <!-- @dd($posts)
+    -->
+    <div> 
         <h2>
             {{$post->title}}
         </h2>
-        @endforeach
+        
+        
     </div>
 
     
